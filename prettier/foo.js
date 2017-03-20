@@ -1,7 +1,7 @@
 "use strict";
 
 var foo = {
-  bar: "bar",
+  bar: "bar string",
   baz: 11,
 };
 

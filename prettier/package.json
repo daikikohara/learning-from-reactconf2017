@@ -1,0 +1,25 @@
+{
+  "name": "prettier-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "gitDir": "../",
+    "*.js": [
+      "prettier-eslint --write --eslintPath prettier/node_modules/eslint --prettierPath prettier/node_modules/prettier",
+      "eslint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.4.0",
+    "prettier": "^0.22.0",
+    "prettier-eslint": "^4.3.2",
+    "prettier-eslint-cli": "^3.1.2"
+  }
+}
