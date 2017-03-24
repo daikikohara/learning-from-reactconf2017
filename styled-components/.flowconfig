@@ -1,0 +1,9 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper.extension='sql' -> '<PROJECT_ROOT>/flow/SQLAsset.js.flow'
