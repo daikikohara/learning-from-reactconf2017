@@ -22,6 +22,7 @@
     "eslint": "^3.18.0",
     "eslint-plugin-flowtype": "^2.30.3",
     "flow-bin": "^0.42.0",
+    "flow-typed": "^2.0.0",
     "husky": "^0.13.2",
     "lint-staged": "^3.4.0",
     "prettier": "^0.22.0",
