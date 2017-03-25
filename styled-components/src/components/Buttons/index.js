@@ -1,4 +1,5 @@
 import DefaultButton from './DefaultButton';
 import BigButton from './BigButton';
+import ThemedButton from './ThemedButton';
 
-export {DefaultButton, BigButton};
+export {DefaultButton, BigButton, ThemedButton};

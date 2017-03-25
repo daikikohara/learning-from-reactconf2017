@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, Buttons} from './components';
-import {DefaultButton, BigButton} from '../../components/Buttons';
+import {Container, Buttons, GreenButtons} from './components';
+import {DefaultButton, BigButton, ThemedButton} from '../../components/Buttons';
 
 class Main extends React.Component {
   constructor(props) {
@@ -39,6 +39,16 @@ class Main extends React.Component {
           >
             Big Button
           </BigButton>
+        </Buttons>
+        <GreenButtons>
+          <ThemedButton>
+            Green Button
+          </ThemedButton>
+        </GreenButtons>
+        <Buttons>
+          <ThemedButton>
+            Default Themed Button
+          </ThemedButton>
         </Buttons>
       </Container>
     );
