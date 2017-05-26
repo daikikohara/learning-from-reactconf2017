@@ -1,6 +1,11 @@
 import React from 'react';
 import {Container, Buttons, GreenButtons} from './components';
-import {DefaultButton, BigButton, ThemedButton} from '../../components/Buttons';
+import {
+  DefaultButton,
+  BigButton,
+  ExtendedButton,
+  ThemedButton,
+} from '../../components/Buttons';
 
 class Main extends React.Component {
   constructor(props) {
@@ -8,6 +13,7 @@ class Main extends React.Component {
     this.state = {
       isDefaultButtonActive: false,
       isBigButtonActive: false,
+      isExtendedButtonActive: false,
     };
   }
 
@@ -20,6 +26,12 @@ class Main extends React.Component {
   toggleBigButton() {
     this.setState({
       isBigButtonActive: !this.state.isBigButtonActive,
+    });
+  }
+
+  toggleExtendedButton() {
+    this.setState({
+      isExtendedButtonActive: !this.state.isExtendedButtonActive,
     });
   }
 
@@ -39,6 +51,12 @@ class Main extends React.Component {
           >
             Big Button
           </BigButton>
+          <ExtendedButton
+            onClick={() => this.toggleExtendedButton()}
+            active={this.state.isExtendedButtonActive}
+          >
+            Extended Button
+          </ExtendedButton>
         </Buttons>
         <GreenButtons>
           <ThemedButton>
