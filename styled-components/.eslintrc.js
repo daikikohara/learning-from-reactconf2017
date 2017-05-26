@@ -16,6 +16,7 @@ module.exports = {
   ],
   env: {
     browser: true,
+    jest: true,
   },
   plugins: ['react', 'flowtype'],
   settings: {

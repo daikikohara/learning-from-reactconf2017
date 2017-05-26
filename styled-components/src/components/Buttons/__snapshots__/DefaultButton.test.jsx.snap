@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultButton Test should be rendered correctly on active 1`] = `
+.jXtbih {
+  background: gray;
+  color: white;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.jXtbih:hover {
+  cursor: pointer;
+}
+
+<button
+  className="jXtbih"
+/>
+`;
+
+exports[`DefaultButton Test should be rendered correctly on disabled 1`] = `
+.auoqs {
+  background: white;
+  color: black;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.auoqs:hover {
+  cursor: pointer;
+}
+
+<button
+  className="auoqs"
+/>
+`;
